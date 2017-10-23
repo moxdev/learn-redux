@@ -7,11 +7,11 @@ import comments from './data/comments';
 import posts from './data/posts';
 
 const defaultStore = {
-  post: 'posts',
-  comment: 'comments'
+  posts,
+  comments
 };
 
-const store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultStore);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
