@@ -1,11 +1,13 @@
 {
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "ecmaFeatures": {
     "jsx": true,
     "modules": true
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "parser": "babel-eslint",
   "rules": {
@@ -20,8 +22,5 @@
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2
   },
-  "plugins": [
-    "babel",
-    "react"
-  ]
+  "plugins": ["babel", "react"]
 }
