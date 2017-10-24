@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Photo from './Photo';
 
 class PhotoGrid extends Component {
@@ -12,3 +13,7 @@ class PhotoGrid extends Component {
 }
 
 export default PhotoGrid;
+
+PhotoGrid.propTypes = {
+  posts: PropTypes.arrayOf(PropTypes.object)
+};
